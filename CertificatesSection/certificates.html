@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Certificates | A N Nanditha</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="certificates.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+</head>
+
+<body>
+    <div id="detective-cursor"></div>
+    <div class="mystery-bg">
+        <div class="stars-container" id="stars-container"></div>
+        <div class="fog-layer"></div>
+        <div class="radar-pulse"></div>
+        <div id="spotlight"></div>
+        <div class="scanline"></div>
+        <canvas id="neural-canvas"></canvas>
+    </div>
+
+    <header id="main-header">
+        <div class="navbar-stars" id="navbar-stars"></div>
+        <div class="nav-container">
+            <div class="logo-container">
+                <a href="../index.html" class="logo">A N Nanditha</a>
+                <div class="logo-aura"></div>
+            </div>
+
+            <div class="mobile-toggle" id="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <nav id="nav-menu">
+                <div class="nav-links">
+                    <a href="../index.html" class="nav-link">Home</a>
+                    <a href="../index.html#about" class="nav-link">About</a>
+                    <a href="../index.html#skills" class="nav-link">Skills</a>
+                    <a href="certificates.html" class="nav-link">Certificates</a>
+                    <a href="../index.html#projects" class="nav-link">Projects</a>
+                    <a href="../index.html#contact" class="nav-link">Contact</a>
+                </div>
+                <div id="nav-indicator"></div>
+                <div id="orbiting-dot"></div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="certificates" style="position: relative;">
+            <div class="cert-particles"></div>
+            <h2 class="section-title">Certificates</h2>
+            <p class="about-text">A collection of certifications I have earned through learning and dedication.</p>
+
+            <div class="cert-divider"></div>
+
+            <div class="cert-grid">
+                <!-- CCNA 1 -->
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="cert-icon">📜</div>
+                    <h3>CCNA: Introduction to Networks</h3>
+                    <p>Cisco Networking Academy | CMR Technical Campus</p>
+                    <button class="view-cert-btn"
+                        data-cert="certificates/CCNA-_Introduction_to_Networks_certificate_237r1a66k3-cmrtc-ac-in_ee10dad9-db15-442f-ad1c-6c0a058ed1ae.pdf">View
+                        Certificate</button>
+                </div>
+
+                <!-- CCNA 2 -->
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="cert-icon">📜</div>
+                    <h3>CCNA: Switching, Routing, and Wireless Essentials</h3>
+                    <p>Cisco Networking Academy | CMR Technical Campus</p>
+                    <button class="view-cert-btn"
+                        data-cert="certificates/CCNA-_Switching-_Routing-_and_Wireless_Essentials_certificate_237r1a66k3-cmrtc-ac-in_ce8d15e4-fefe-405f-81cc-b2d91b058483.pdf">View
+                        Certificate</button>
+                </div>
+
+                <!-- CCNA 3 -->
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="cert-icon">📜</div>
+                    <h3>CCNA: Enterprise Networking, Security, and Automation</h3>
+                    <p>Cisco Networking Academy | CMR Technical Campus</p>
+                    <button class="view-cert-btn"
+                        data-cert="certificates/CCNA-_Enterprise_Networking-_Security-_and_Automation_certificate_237r1a66k3-cmrtc-ac-in_bc5516ea-13e5-4308-b415-66a4f77ad2f4.pdf">View
+                        Certificate</button>
+                </div>
+
+                <!-- AI -->
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="cert-icon">🤖</div>
+                    <h3>Introduction to Artificial Intelligence</h3>
+                    <p>Infosys Springboard | Dec 2025</p>
+                    <button class="view-cert-btn" data-cert="certificates/intro to ai.pdf">View Certificate</button>
+                </div>
+
+                <!-- CV -->
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="cert-icon">👁️</div>
+                    <h3>Computer Vision 101</h3>
+                    <p>Infosys Springboard | Dec 2025</p>
+                    <button class="view-cert-btn" data-cert="certificates/cv.pdf">View Certificate</button>
+                </div>
+
+                <!-- Pandas -->
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="cert-icon">🐼</div>
+                    <h3>Pandas – Kaggle Learn</h3>
+                    <p>Kaggle Learn | Aug 2025</p>
+                    <button class="view-cert-btn" data-cert="certificates/kaggle-pandas.png">View
+                        Certificate</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal for Viewing Certificates -->
+        <div class="cert-modal" id="cert-modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <img id="modal-img" src="" alt="Certificate View">
+                <iframe id="modal-pdf" src="" style="width:100%; height:80vh; border:none; display:none;"></iframe>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        © 2026 A N Nanditha
+    </footer>
+
+    <script src="../script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            AOS.init({
+                duration: 1000,
+                once: true,
+                offset: 100
+            });
+        });
+    </script>
+</body>
+
+</html>

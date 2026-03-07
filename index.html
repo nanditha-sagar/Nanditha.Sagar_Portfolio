@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>A N Nanditha | Portfolio</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+</head>
+
+<div id="detective-cursor"></div>
+<div class="mystery-bg">
+  <div class="stars-container" id="stars-container"></div>
+  <div class="fog-layer"></div>
+  <div class="radar-pulse"></div>
+  <div id="spotlight"></div>
+  <div class="scanline"></div>
+  <canvas id="neural-canvas"></canvas>
+</div>
+
+<header id="main-header">
+  <div class="navbar-stars" id="navbar-stars">
+
+  </div>
+  <div class="nav-container">
+    <div class="logo-container">
+      <a href="index.html" class="logo">A N Nanditha</a>
+      <div class="logo-aura"></div>
+    </div>
+
+    <div class="mobile-toggle" id="mobile-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav id="nav-menu">
+      <div class="nav-links">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#coding" class="nav-link">Coding</a>
+        <a href="CertificatesSection/certificates.html" class="nav-link">Certificates</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#cv" class="nav-link">CV</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+      <div id="nav-indicator"></div>
+      <div id="orbiting-dot"></div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="scanline"></div>
+  <section id="hero">
+    <img src="image.png" alt="A N Nanditha" class="profile-img" />
+
+    <h1 class="glitch" data-text="Hi, I'm A N Nanditha">Hi, I'm A N Nanditha</h1>
+
+    <div class="typing"></div>
+
+    <p class="muted">
+      AI Explorer | Web Developer | Tech Investigator<br>
+      I'm a CSE student specializing in AI & Machine Learning who enjoys building web experiences, exploring new
+      technologies, and solving complex problems. Inspired by the analytical thinking in crime thrillers, I love
+      breaking down challenges and uncovering solutions.
+    </p>
+  </section>
+
+  <section id="about" class="case-file">
+    <div class="case-header">
+      <span class="confidential-stamp">CONFIDENTIAL</span>
+      <h2 class="section-title">Case File: Developer Profile</h2>
+    </div>
+
+    <div class="case-content">
+      <div class="file-folder">
+        <div class="folder-tab">FILE_001</div>
+        <div class="folder-body">
+          <p><strong>SUBJECT:</strong> A N Nanditha</p>
+          <p><strong>OCCUPATION:</strong> AI & ML Student | Web Developer</p>
+          <p><strong>INTERESTS:</strong> Exploring New Tools, Trading, Crime Thrillers</p>
+          <hr>
+          <p class="about-text">
+            Passionate developer specializing in AI & Machine Learning. Inspired by the analytical thinking in crime
+            thrillers, I approach every coding challenge as a mystery to be solved. Expertise in building meaningful web
+            experiences and building intelligent solutions.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="tech-arsenal">
+    <div class="section-header">
+      <h2 class="section-title">Tech Arsenal</h2>
+      <p class="section-subtitle">Tactical specialization in AI & Machine Learning</p>
+    </div>
+
+
+    <div class="skills-grid" id="skills-grid">
+      <!-- Programming -->
+      <div class="skill-module" data-aos="fade-up">
+        <div class="module-header">
+          <span class="module-id">MOD_01</span>
+          <h3>Programming</h3>
+        </div>
+        <div class="skill-tags">
+          <div class="skill-tag">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+            <span>Python</span>
+          </div>
+          <div class="skill-tag">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
+            <span>Java</span>
+          </div>
+          <div class="skill-tag">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              alt="JavaScript" />
+            <span>JavaScript</span>
+          </div>
+          <div class="skill-tag">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" />
+            <span>C</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Web Development -->
+      <div class="skill-module" data-aos="fade-up">
+        <div class="module-header">
+          <span class="module-id">MOD_02</span>
+          <h3>Web Dev</h3>
+        </div>
+        <div class="skill-tags">
+          <div class="skill-tag">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" />
+            <span>HTML</span>
+          </div>
+          <div class="skill-tag">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" />
+            <span>CSS</span>
+          </div>
+          <div class="skill-tag">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS" />
+            <span>JS</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Data & AI -->
+      <div class="skill-module" data-aos="fade-up">
+        <div class="module-header">
+          <span class="module-id">MOD_03</span>
+          <h3>Data & AI</h3>
+        </div>
+        <div class="skill-tags">
+          <div class="skill-tag">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy" />
+            <span>NumPy</span>
+          </div>
+          <div class="skill-tag">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Pandas" />
+            <span>Pandas</span>
+          </div>
+          <div class="skill-tag">
+            <div style="font-size: 16px">👁️</div>
+            <span>OpenCV</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Database -->
+      <div class="skill-module" data-aos="fade-up">
+        <div class="module-header">
+          <span class="module-id">MOD_04</span>
+          <h3>Database</h3>
+        </div>
+        <div class="skill-tags">
+          <div class="skill-tag">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" />
+            <span>MySQL</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tools -->
+      <div class="skill-module" data-aos="fade-up">
+        <div class="module-header">
+          <span class="module-id">MOD_05</span>
+          <h3>Tools</h3>
+        </div>
+        <div class="skill-tags">
+          <div class="skill-tag">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
+            <span>Git</span>
+          </div>
+          <div class="skill-tag">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+            <span>GitHub</span>
+          </div>
+          <div class="skill-tag">
+            <div style="font-size: 16px">⚙️</div>
+            <span>n8n</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Design -->
+      <div class="skill-module" data-aos="fade-up">
+        <div class="module-header">
+          <span class="module-id">MOD_06</span>
+          <h3>Design</h3>
+        </div>
+        <div class="skill-tags">
+          <div class="skill-tag">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" />
+            <span>Figma</span>
+          </div>
+          <div class="skill-tag">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" alt="Canva" />
+            <span>Canva</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="investigations">
+    <div class="section-header">
+      <h2 class="section-title">Investigations & Experiments</h2>
+      <p class="section-subtitle">Digital evidence of technical operations</p>
+    </div>
+
+    <div class="evidence-grid">
+      <!-- Project 1 -->
+      <div class="evidence-item" data-aos="fade-up">
+        <div class="evidence-header">
+          <span class="evidence-id">CASE_001</span>
+          <h3>Personal Portfolio</h3>
+        </div>
+        <div class="evidence-body">
+          <p>Advanced investigative dashboard combining galaxy tech with mystery thriller aesthetics. Built with vanilla
+            web tech.</p>
+          <div class="evidence-tags">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+          </div>
+          <div class="evidence-links">
+            <a href="https://an-nanditha.netlify.app/" target="_blank" class="cyber-btn">Access Live</a>
+            <a href="https://github.com/nanditha-sagar/nanditha.github.io" target="_blank"
+              class="cyber-btn secondary">Source Code</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="evidence-item" data-aos="fade-up" data-aos-delay="100">
+        <div class="evidence-header">
+          <span class="evidence-id">CASE_002</span>
+          <h3>Mini Web Project</h3>
+        </div>
+        <div class="evidence-body">
+          <p>A collection of experimental UI components and technical prototypes exploring modern web standards.</p>
+          <div class="evidence-tags">
+            <span>Frontend</span>
+            <span>Interactive</span>
+          </div>
+          <div class="evidence-links">
+            <a href="#" class="cyber-btn">Access Live</a>
+            <a href="#" class="cyber-btn secondary">Source Code</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="cv" class="case-file">
+    <div class="case-header">
+      <span class="confidential-stamp">DOCUMENT</span>
+      <h2 class="section-title">Professional Resume</h2>
+    </div>
+
+    <div class="case-content">
+      <div class="file-folder">
+        <div class="folder-tab">CV_FILE</div>
+        <div class="folder-body">
+          <p>
+            Access my full professional resume including education, technical skills,
+            projects, and experience.
+          </p>
+
+          <div style="margin-top:20px;">
+            <a href="assets/Nanditha_Resume.pdf" target="_blank" class="cyber-btn">
+              View CV
+            </a>
+
+            <a href="assets/Nanditha_Resume.pdf" download class="cyber-btn secondary">
+              Download CV
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="coding" class="tech-arsenal">
+    <div class="section-header">
+      <h2 class="section-title">Code Operations</h2>
+      <p class="section-subtitle">Competitive programming profiles & problem-solving records</p>
+    </div>
+
+    <div class="skills-grid">
+
+      <!-- LeetCode -->
+      <div class="skill-module" data-aos="fade-up">
+        <div class="module-header">
+          <h3>LeetCode</h3>
+        </div>
+        <a href="https://leetcode.com/u/nanditha_01/" target="_blank" rel="noopener" class="cyber-btn">View Profile</a>
+      </div>
+
+      <!-- HackerRank -->
+      <div class="skill-module" data-aos="fade-up" data-aos-delay="100">
+        <div class="module-header">
+          <h3>HackerRank</h3>
+        </div>
+        <a href="https://www.hackerrank.com/profile/a_n_nanditha_01" target="_blank" rel="noopener"
+          class="cyber-btn">View Profile</a>
+      </div>
+
+      <!-- CodeChef -->
+      <div class="skill-module">
+        <div class="module-header">
+          <h3>CodeChef</h3>
+        </div>
+        <a href="#" class="cyber-btn" target="_blank">View Profile</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="certificates" class="credentials">
+    <div class="section-header">
+      <h2 class="section-title" data-aos="fade-up">Verified Credentials</h2>
+      <p class="section-subtitle">Official certification of technical expertise</p>
+    </div>
+
+    <div class="credentials-grid">
+      <!-- CCNA 1 -->
+      <div class="credential-badge" data-aos="fade-up">
+        <div class="badge-header">
+          <span class="badge-id">CERT_001</span>
+          <h3>CCNA: Intro to Networks</h3>
+        </div>
+        <div class="badge-body">
+          <p>Cisco Networking Academy certification focusing on foundational networking concepts.</p>
+          <a href="CertificatesSection/certificates/CCNA-_Introduction_to_Networks_certificate_237r1a66k3-cmrtc-ac-in_ee10dad9-db15-442f-ad1c-6c0a058ed1ae.pdf"
+            target="_blank" class="cyber-btn">Verify Document</a>
+        </div>
+      </div>
+
+      <!-- CCNA 2 -->
+      <div class="credential-badge" data-aos="fade-up" data-aos-delay="100">
+        <div class="badge-header">
+          <span class="badge-id">CERT_002</span>
+          <h3>CCNA: Wireless Essentials</h3>
+        </div>
+        <div class="badge-body">
+          <p>Switching, Routing, and Wireless Essentials certification from Cisco Academy.</p>
+          <a href="CertificatesSection/certificates/CCNA-_Switching-_Routing-_and_Wireless_Essentials_certificate_237r1a66k3-cmrtc-ac-in_ce8d15e4-fefe-405f-81cc-b2d91b058483.pdf"
+            target="_blank" class="cyber-btn">Verify
+            Document</a>
+        </div>
+      </div>
+
+      <!-- CCNA 3 -->
+      <div class="credential-badge" data-aos="fade-up" data-aos-delay="200">
+        <div class="badge-header">
+          <span class="badge-id">CERT_003</span>
+          <h3>CCNA: Security & Automation</h3>
+        </div>
+        <div class="badge-body">
+          <p>Enterprise Networking, Security, and Automation professional certification.</p>
+          <a href="CertificatesSection/certificates/CCNA-_Enterprise_Networking-_Security-_and_Automation_certificate_237r1a66k3-cmrtc-ac-in_bc5516ea-13e5-4308-b415-66a4f77ad2f4.pdf"
+            target="_blank" class="cyber-btn">Verify
+            Document</a>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 60px;">
+      <a href="CertificatesSection/certificates.html" class="cyber-btn" style="padding: 15px 40px;">
+        Access Full Archive →
+      </a>
+    </div>
+  </section>
+
+  <section id="contact" class="case-file">
+    <div class="case-header">
+      <span class="confidential-stamp">OPEN CHANNEL</span>
+      <h2 class="section-title">Case Update: Contact Links</h2>
+    </div>
+
+    <div class="case-content">
+      <div class="file-folder">
+        <div class="folder-tab">COMMS_LOG</div>
+        <div class="folder-body">
+          <p><strong>EMAIL:</strong> <a href="mailto:a.n.nanditha.sagar@gmail.com">a.n.nanditha.sagar@gmail.com</a></p>
+          <p><strong>GITHUB:</strong> <a href="https://github.com/nanditha-sagar" target="_blank">nanditha-sagar</a></p>
+          <p><strong>LINKEDIN:</strong> <a href="https://www.linkedin.com/in/a-n-nanditha-562695259/"
+              target="_blank">a-n-nanditha</a></p>
+          <hr>
+          <p class="about-text">
+            Available for investigative collaborations, AI research projects, and web development operations.
+            Transmission protocols active 24/7.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>© 2026 A N Nanditha </footer>
+
+<script src="script.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true,
+  });
+</script>
+</body>
+
+</html>
