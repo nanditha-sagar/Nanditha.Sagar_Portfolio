@@ -443,22 +443,22 @@ header {
 main {
   max-width: 1400px;
   margin: auto;
-  padding: 100px 0 1.5rem;
+  padding: 120px 20px 1.5rem;
 }
 
 #hero {
   text-align: center;
-  height: 100vh;
+  min-height: 100vh;
+  padding-top: 120px;
+  /* FIX */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 20px;
-  position: relative;
-  overflow: hidden;
 }
 
 .profile-img {
+  margin-top: 40px;
   width: 200px;
   height: 200px;
   object-fit: cover;
