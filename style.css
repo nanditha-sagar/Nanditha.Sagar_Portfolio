@@ -443,7 +443,7 @@ header {
 main {
   max-width: 1400px;
   margin: auto;
-  padding: 0 1.5rem;
+  padding: 100px 0 1.5rem;
 }
 
 #hero {
