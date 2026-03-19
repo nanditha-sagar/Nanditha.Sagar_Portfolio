@@ -26,7 +26,7 @@ body {
     -apple-system,
     sans-serif;
   background: #05070f;
-  color: var(--text);
+  color: var(--text-primary);
   line-height: 1.8;
   font-size: 1.25rem;
   overflow-x: hidden;
